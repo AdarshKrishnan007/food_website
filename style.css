@@ -1,0 +1,629 @@
+:root{
+  --green:#289944;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+.navbar{
+  background-color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+.left{
+  display: flex;
+}
+.left img{
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  color: var(--green);
+}
+.left h1{
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--green);
+  font-weight: 700;
+}
+.checkBtn{
+  display: none;
+}
+#check {
+display: none;
+}
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: left;
+  color: #000000;
+  line-height: 80px;
+}
+.right ul {
+  display: flex;
+  list-style: none;
+}
+.right ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: rgb(16, 14, 14);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s;
+}
+.right ul li a:hover {
+  border-radius: 7px;
+  color: var(--green);
+  font-weight: bold;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  padding: 20px 87px;
+}
+section{
+  padding: 50px 0;
+  
+}
+.home{
+  background-color: white;
+  color: #000000;
+}
+.home-left{
+  flex-basis: 50%;
+  justify-content: space-evenly;
+}
+.home-right{
+  flex-basis: 30%;
+}
+.home-left h1{
+  font-size: 60px;
+  line-height: 1;
+  padding: 2rem 0;
+  color: var(--green);
+}
+.home-left p{
+  font-size: 39px;
+  padding: 2rem 2rem 2rem 0;
+  font-weight: bold;
+}
+.home-left .twoButt {
+  width: 173px;
+  height: 48px;
+  color: rgb(255, 255, 255);
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+}
+.home-left .twoButt:hover{
+  background-color: white;
+  color: var(--green);
+  box-shadow: rgba(0, 0, 0, 0.64);
+}
+.home-right img {
+  width: 471px;
+  height: 471px;
+}
+.row button{
+  width: 104px;
+ height: 56px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+/* section-2 */
+.about{
+  background-color: var(--green);
+  color: #fff;
+}
+.about-left{
+  flex-basis: 50%;
+  justify-content: space-evenly;
+}
+.about-right{
+  flex-basis: 30%;
+}
+.about-left h1{
+  font-size: 30px;
+  line-height: 1.5;
+  padding: 1rem 11rem 2rem 0;
+}
+.about-left p{
+  font-size: 16px;
+  padding: 0 2rem 2rem 0;
+}
+.about-left .twoButt {
+  width: 173px;
+  height: 48px;
+  color: var(--green);
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.about-left .twoButt:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.64);
+}
+.about-right img {
+  width: 390px;
+  height: 220px;
+}
+
+/*section-3*/
+.services{
+  background-color: white;
+  color: var(--green);
+}
+.services .row{
+  justify-content: center;
+  align-items: center;
+}
+.services-header{
+  text-align: center;
+}
+.services-header h5{
+  padding-bottom: 2rem;
+}
+.services-card1{
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 2rem;
+  transition: 0.5s;
+}
+.services-head{
+  padding: 2rem 0;
+}
+.services-card1:hover{
+  border-bottom: 4px solid var(--green);
+}
+.services-icon img{
+  width: 60px;
+  height: 60px;
+}
+
+/* section-4*/
+.menu{
+  background-color: var(--green);
+  color: black
+}
+.menu .row{
+  justify-content: center;
+  align-items: center;
+}
+.menu-header{
+  text-align: center;
+  color: #fff;
+}
+.menu-header h5{
+  padding-bottom: 2rem;
+}
+.menu-main-card{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+.menu-card1{
+  text-align: center;
+  padding: 2rem 2rem;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+.menu-price{
+  text-align: start;
+}
+.menu-price h3{
+  padding: 1rem 0;
+}
+.menu-image{
+  width: 100%;
+  bottom: 5%;
+}
+.menu-image img{
+  width: 200px;
+  height: 200px;
+}
+.menu-card1 .menu-cart{
+  left: 59%;
+  top: 83%;
+  position: absolute;
+  border-radius: 5px;
+}
+/*section-5*/
+.app{
+  background-color: #fff;
+  color: var(--green);
+}
+.app-left{
+  flex-basis: 50%;
+  justify-content: space-evenly;
+}
+.app-right{
+  flex-basis: 30%;
+}
+.app-left h1{
+  font-size: 30px;
+  line-height: 1.5;
+  padding: 1rem 11rem 2rem 0;
+}
+.app-left p{
+  font-size: 16px;
+  padding: 0 2rem 2rem 0;
+}
+.app-left .twoButt {
+  width: 173px;
+  height: 48px;
+  color: rgb(255, 255, 255);
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+}
+.app-left .twoButt:hover{
+  background-color: white;
+  color: var(--green);
+  box-shadow: rgba(0, 0, 0, 0.64);
+}
+.app-right img {
+  width: 390px;
+  height: 500px;
+}
+/*section 6*/
+.about-us{
+  background-color: var(--green);
+  color: #fff;
+}
+.about-us-left{
+  flex-basis: 50%;
+  justify-content: space-evenly;
+  padding-left: 300px;
+}
+.about-us-right{
+  flex-basis: 30%;
+}
+.about-us-right h1{
+  font-size: 30px;
+  line-height: 1.5;
+  padding: 1rem 0rem 1rem 0;
+}
+.about-us-right p{
+  font-size: 16px;
+  padding: 0 2rem 1rem 0;
+  width: 245%;
+}
+.about-us-left .twoButt {
+  width: 173px;
+  height: 48px;
+  color: var(--green);
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+
+}
+.about-us-left .twoButt:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.64);
+}
+
+/*footer*/
+.footer .container .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container ul{
+  list-style: none;
+}
+.footer{
+  background-color: #ffffff;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 700;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #000000;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+@media (max-width:600px){
+  
+  .list {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      padding-top: 2rem;
+      transition: all 1s;
+      z-index: 1000;
+  }
+  #check {
+      display: none;
+  }
+  .checkBtn {
+      display: block;
+  }
+  #check:checked~ul {
+    top: 0;
+}
+.list {
+  display: none;
+}
+
+/* Show the navbar list when the menu-toggle checkbox is checked */
+#check:checked ~ .list {
+  display: block;
+}
+  .row{
+    flex-direction: column;
+    padding: 0;
+  }
+  .home{
+    width: 100%;
+    height: auto;
+  }
+  .home-left{
+    margin-right: 10px;
+  }
+  
+  .home-left .twoButt{
+    margin-left: 0;
+  }
+  .home-left h1{
+    font-size: 32px;
+
+  }
+  .home-left p{
+    font-size: 18px;
+    padding-right: 2px;
+    text-align: left;
+    padding: 0rem 0rem 2rem 0;
+    font-weight: bold;
+  }
+  .home-right img{
+    width: 280px;
+    height: 280px;
+    margin-top: 50px;
+  }
+  .menu-main-card{
+    flex-direction: column;
+  }
+  .services-box{
+    margin-top: 20px;
+  }
+  .home-left .twoButt:hover{
+    border-bottom: 5px solid red;
+  }
+  .about-left{
+    width: 100%;
+  }
+  .about-left h1{
+    padding-right: 0;
+    font-size: 20px;
+  }
+  .about-left p{
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .about-us-right h1{
+    font-size: 20px;
+  }
+  .about-us-right p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .about-us-left{
+    padding: 0;
+  }
+  .menu-card1{
+    margin-top: 30px;
+  }
+  .footer-col{
+    width: 100%;
+}
+.app-left h1{
+  font-size: 20px;
+  padding-right: 0;
+}
+.app-left p{
+  font-size: 14px;
+  padding-right: 0;
+}
+.app-left .buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.app-left .twoButt{
+  width: 150px;
+  height: 50px;
+}
+
+}
+
+@media (min-width:820px) and (max-width:992px){
+  .list {
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 5rem;
+      right: 100%;
+      transition: all 1s;
+  }
+  #check {
+      display: none;
+  }
+  .checkBtn {
+      display: block;
+  }
+  #check:checked~ul {
+      right: 0%;
+  }
+  .row{
+    flex-direction: column;
+    padding: 0;
+  }
+  .row{
+    flex-direction: column;
+    padding: 0;
+  }
+  .home{
+    width: 100%;
+    height: auto;
+  }
+  .home-left{
+    margin-right: 205px;
+  }
+  
+  .home-left .twoButt{
+    margin-left: 0;
+  }
+  .home-left h1{
+    font-size: 32px;
+
+  }
+  .home-left p{
+    font-size: 18px;
+    padding-right: 2px;
+    text-align: left;
+    padding: 0rem 0rem 2rem 0;
+    font-weight: bold;
+  }
+  .home-right img{
+    width: 280px;
+    height: 280px;
+    margin-top: 50px;
+  }
+  .menu-main-card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-box{
+    margin-top: 20px;
+  }
+  .home-left .twoButt:hover{
+    border-bottom: 5px solid red;
+  }
+  .about-left{
+    width: 100%;
+  }
+  .about-left h1{
+    padding-right: 0;
+    font-size: 20px;
+  }
+  .about-left p{
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .about-us-right h1{
+    font-size: 20px;
+  }
+  .about-us-right p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .about-us-left{
+    padding: 0;
+  }
+  .menu-card1{
+    margin-top: 30px;
+    width: 60%;
+  }
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+   }
+   .container .row{
+    flex-direction: row;
+   }
+.app-left h1{
+  font-size: 20px;
+  padding-right: 0;
+}
+.app-left p{
+  font-size: 14px;
+  padding-right: 0;
+}
+.app-left .buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.app-left .twoButt{
+  width: 150px;
+  height: 50px;
+}
+} 
